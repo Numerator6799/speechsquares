@@ -17,7 +17,7 @@ class Store {
     const settings = this.get(StoreKeys.SETTINGS);
     if (settings && settings.rate)
       return settings;
-    return { rate: 0, selectedVoice: undefined };
+    return { rate: 1, selectedVoice: undefined };
   }
 
   saveSettings(rate, voiceUri) {
